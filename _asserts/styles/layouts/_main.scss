@@ -1,25 +1,7 @@
-#main,
-footer {
-    padding-left: 240px;
-}
-
-.container {
-  padding: 0 0.5rem;
+#main{
+  max-width: 600px;
+  min-width: 320px;
   margin: 0 auto;
-  max-width: 100% !important;
-  width: 98%;
-}
-
-@media only screen and (min-width: 601px) {
-    .container {
-        width: 98%;
-    }
-}
-
-@media only screen and (min-width: 993px) {
-    .container {
-        width: 98%;
-    }
 }
 
 

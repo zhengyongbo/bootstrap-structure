@@ -1,17 +1,23 @@
 ---
-layout: default
 title: 首页
 slug: index
 ---
-<div class="row">
-    <div class="col s6">
-        <div class="collection with-header" style="margin-top:15px;">
-            <div class="collection-header"><h5>页面列表</h5></div>
-            {% for node in site.html_pages %}
-                {% if node.slug != "index" %}
-                    <a href="{{ node.url }}" class="collection-item"><i class="material-icons" style="  vertical-align: middle;padding-right:10px;">view_quilt</i>{{ node.title }}</a>
-                {% endif %} 
-            {% endfor %}
+<div class="panel panel-info border-none">
+    <div class="panel-heading">
+        <strong>所有页面列表</strong>
+    </div>
+    <div class="panel-body no-padding">
+        <div class="list-group no-margin">
+            {% for node in site.html_pages %} {% if node.slug != "index" %}
+            <div class="list-group-item">
+                <div class="row-content">
+                    <a href=".{{ node.url }}" style="display: block;width:100%;">
+                        <i class="mdi-hardware-keyboard-alt" style="padding-right:5px;"></i>
+                        <p class="list-group-item-text" style="display:inline-block;">{{ node.title }}</p>
+                    </a>
+                </div>
+            </div>
+            {% endif %} {% endfor %}
         </div>
     </div>
 </div>

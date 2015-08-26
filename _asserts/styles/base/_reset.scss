@@ -1,172 +1,220 @@
 /* latin-ext */
+
 @font-face {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Inconsolata'), url(http://fonts.gstatic.com/s/inconsolata/v11/BjAYBlHtW3CJxDcjzrnZCCYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Inconsolata'), url(http://fonts.gstatic.com/s/inconsolata/v11/BjAYBlHtW3CJxDcjzrnZCCYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+
+
 /* latin */
+
 @font-face {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Inconsolata'), url(http://fonts.gstatic.com/s/inconsolata/v11/BjAYBlHtW3CJxDcjzrnZCI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Inconsolata'), url(http://fonts.gstatic.com/s/inconsolata/v11/BjAYBlHtW3CJxDcjzrnZCI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 @font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-       local('MaterialIcons-Regular'),
-       url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
-       url(../fonts/MaterialIcons-Regular.woff) format('woff'),
-       url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/MaterialIcons-Regular.woff2) format('woff2'), url(../fonts/MaterialIcons-Regular.woff) format('woff'), url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
 
 .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  word-wrap: normal;
-  -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    word-wrap: normal;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
 }
 
-body{
-	background-color: #fcfcfc;
-}
-@media (max-width:767px){
-	html,body{
-	//overflow-x:hidden;
-}
-}
-.full-height{
-	min-height:100%;
-	padding:0 10px;
-	margin:0 auto;
-}
-body{
-	// font-family:Microsoft YaHei,SimSun,Arial;
+body {
+    background-color: #fcfcfc;
 }
 
-ul , ol , li {
-	list-style-type:none; vertical-align: middle;
+@media (max-width:767px) {
+    html,
+    body {
+        //overflow-x:hidden;
+    }
 }
-.h1, .h2, .h3, .h4, body, h1, h2, h3, h4, h5, h6 {
-  font-family:Microsoft YaHei,SimSun,Arial;
+
+.full-height {
+    min-height: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+body {
+    font-family:Microsoft YaHei,SimSun,Arial;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Microsoft YaHei, SimSun, Arial;
 }
 
 .clearfix:before,
-.clearfix:after{
-	display: table;
-  	content: " ";
+.clearfix:after {
+    display: table;
+    content: " ";
 }
 
-.clearfix:after{
-	clear:both;
+.clearfix:after {
+    clear: both;
 }
 
 .hh-width-100p {
-	width:100%;
-}
-.height10{
-	height:10px;
-	font-size:0;
-	line-height:0;
-}
-.height50{
-	height:50px;
-}
-.height70{
-	height:70px;
-}
-.hh-wh-50{
-	width:50px;
-	height:50px;
-}
-.no-margin{
-	margin:0;
-}
-.hh-mlr--10 {
-	margin-left:-10px;
-	margin-right:-10px;
-}
-.hh-mtb-0 {
-	margin-top:0;
-	margin-bottom:0;
-}
-.hh-mtb-5{
-	margin-top:5px;
-	margin-bottom:5px;
-}
-.hh-mt-10{
-	margin-top:10px;
-}
-.hh-margin-10 {
-	margin:10px;
-}
-.hh-margin--10 {
-	margin:-10px;
-}
-.no-padding{
-	padding:0;
-}
-.hh-pt-10 {
-    padding-top:10px;
-}
-.hh-pt-15 {
-    padding-top:15px;
-}
-.hh-pt-20 {
-    padding-top:20px;
-}
-.hh-pb-30 {
-    padding-bottom:30px;
-}
-.hh-pl-10 {
-	padding-left:10px;
-}
-.hh-plr-0 {
-	padding-left:0;
-	padding-right:0;
-}
-.hh-plr-5 {
-	padding-left:5px;
-	padding-right:5px;
-}
-.hh-plr-10 {
-	padding-left:10px;
-	padding-right:10px;
-}
-.hh-ptp-10 {
-	padding-top:10px;
-	padding-bottom:10px;
-}
-.hh-padding-10 {
-	padding:10px;
-}
-.hh-padding-0 {
-	padding:0;
+    width: 100%;
 }
 
-.hh-font-weight{
-	font-weight:bold;
+.height10 {
+    height: 10px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.height50 {
+    height: 50px;
+}
+
+.height70 {
+    height: 70px;
+}
+
+.hh-wh-50 {
+    width: 50px;
+    height: 50px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.hh-mlr--10 {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.hh-mtb-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hh-mtb-5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.hh-mt-10 {
+    margin-top: 10px;
+}
+
+.hh-margin-10 {
+    margin: 10px;
+}
+
+.hh-margin--10 {
+    margin: -10px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.hh-pt-10 {
+    padding-top: 10px;
+}
+
+.hh-pt-15 {
+    padding-top: 15px;
+}
+
+.hh-pt-20 {
+    padding-top: 20px;
+}
+
+.hh-pb-30 {
+    padding-bottom: 30px;
+}
+
+.hh-pl-10 {
+    padding-left: 10px;
+}
+
+.hh-plr-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.hh-plr-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.hh-plr-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hh-ptp-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.hh-padding-10 {
+    padding: 10px;
+}
+
+.hh-padding-0 {
+    padding: 0;
+}
+
+.hh-font-weight {
+    font-weight: bold;
 }
 
 @for $size from 10 through 24 {
-	.hh-font-size-#{$size} {
-		font-size: #{$size}px;
-	}
+    .hh-font-size-#{$size} {
+        font-size: #{$size}px;
+    }
 }
 
-
-
+.border-none {
+    border: none;
+}

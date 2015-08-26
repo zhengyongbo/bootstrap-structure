@@ -109,7 +109,7 @@ module.exports = function(grunt) {
                         'asserts/images/{,*/}*.webp',
                         '{,*/}*.html',
                         'scripts/*.js',
-                        'fonts/{,*/}*.*',
+                        'font/{,*/}*.*',
                         'styles/fonts/{,*/}*.*'
                     ]
                 }, {
