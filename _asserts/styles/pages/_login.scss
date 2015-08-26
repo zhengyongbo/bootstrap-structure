@@ -1,0 +1,96 @@
+.login-content {
+    overflow: hidden;
+    height: 100%;
+}
+
+body.login-content {
+    text-align: center;
+    font-weight: 400;
+    padding-top: 65px;
+    padding-bottom: 110px;
+    // font-size: 13px;
+    // line-height: 1.42857143;
+    color: #5e5e5e;
+    background-color: #edecec;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position: relative;
+    &:before {
+        height: 50%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #00bcd4;
+        content: "";
+        z-index: 0;
+    }
+    &:after {
+        content: "";
+        vertical-align: middle;
+        display: inline-block;
+        width: 1px;
+        height: 100%;
+    }
+    .btn-login {
+        position: absolute;
+        top: 50%;
+        margin-top: -25px;
+        right: -25px;
+    }
+    .remember-p {
+        padding-left: 45px;
+        [type=checkbox]+label:before {
+            border-color: #26a69a;
+        }
+        [type=checkbox]:checked+label:before {
+            border-top-color: transparent;
+            border-left-color: transparent;
+        }
+    }
+}
+
+.lc-block {
+    background: #fff;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    border-radius: 2px;
+    width: 500px;
+    display: inline-block;
+    padding: 35px 55px 35px;
+    margin-top: 42px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.login-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0%;
+    bottom: -45px;
+    li {
+        display: inline-block;
+        margin: 0 2px;
+        -webkit-transition: all;
+        -o-transition: all;
+        transition: all;
+        -webkit-transition-duration: 150ms;
+        transition-duration: 150ms;
+        cursor: pointer;
+        vertical-align: top;
+        line-height: 16px;
+        min-width: 16px;
+        min-height: 16px;
+        text-transform: uppercase;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}

@@ -1,0 +1,17 @@
+---
+layout: default
+title: 首页
+slug: index
+---
+<div class="row">
+    <div class="col s6">
+        <div class="collection with-header" style="margin-top:15px;">
+            <div class="collection-header"><h5>页面列表</h5></div>
+            {% for node in site.html_pages %}
+                {% if node.slug != "index" %}
+                    <a href="{{ node.url }}" class="collection-item"><i class="material-icons" style="  vertical-align: middle;padding-right:10px;">view_quilt</i>{{ node.title }}</a>
+                {% endif %} 
+            {% endfor %}
+        </div>
+    </div>
+</div>

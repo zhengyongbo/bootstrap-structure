@@ -1,0 +1,66 @@
+- name: 线路管理
+  icon: swap_calls
+  has_sub: true
+  sub_menu: 
+    - name: 普通线路列表
+      url: '#'
+    - name: 单团单议列表
+      url: '#'
+    - name: 线路分发
+      url: '#'
+    - name: 基本收支
+      url: '#'
+    - name: 分项报价
+      url: '#'
+
+- name: 订单管理
+  icon: view_list
+  has_sub: view_list
+  sub_menu: 
+    - name: 线路订单
+      url: '#'
+    - name: 游客信息录入
+      url: '#'
+    - name: 单个利润
+      url: '#'
+    - name: 报价书
+      url: '#'
+
+- name: 财务管理
+  icon: payment
+  has_sub: true
+  sub_menu: 
+    - name: 线路订单
+      url: '#'
+    - name: 游客信息录入
+      url: '#'
+    - name: 单个利润
+      url: '#'
+    - name: 报价书
+      url: '#'
+
+- name: 基本信息维护
+  icon: system_update_alt
+  has_sub: true
+  sub_menu: 
+    - name: 客户单位
+      url: '#'
+    - name: 酒店信息
+      url: '#'
+    - name: 餐馆信息
+      url: '#'
+    - name: 景区门票
+      url: '#'
+    - name: 车队信息
+      url: '#'
+
+- name: 系统设置
+  icon: settings
+  has_sub: true
+  sub_menu: 
+    - name: 忘记密码
+      url: '#'
+    - name: 收款账户管理
+      url: '#'
+    - name: 登录密码修改
+      url: '#'

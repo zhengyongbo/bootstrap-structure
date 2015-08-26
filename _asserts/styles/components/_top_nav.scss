@@ -1,0 +1,30 @@
+.top-nav{
+	height:100px;
+	margin:0;
+
+	.container{
+		padding:20px 0;
+	}
+
+	.navbar-brand{
+		padding-top:0;
+		padding-bottom: 0;
+
+		img{
+			width: 100%;
+  			height: 100%;
+		}
+	}
+
+	.nav-text {
+	    height: 50px;
+		margin: 5px 0 5px 25px;
+		padding-left: 15px;
+		border-left: solid 1px #ccc;
+		float: left;
+		font-size: 24px;
+		line-height: 50px;
+		color: $main-front-color;
+		font-weight: normal;
+	}
+}

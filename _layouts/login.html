@@ -1,0 +1,31 @@
+<!DOCTYPE html class="login-content">
+<html lang="zh-CN">
+{% include head.html %}
+
+<body class="login-content">
+    {% include loader_wrapper.html %}
+    <form class="lc-block" id="l-login">
+        {% assign data = site.data.login[page.slug] %} {% for item in data.items %}
+        <div class="input-field">
+            <i class="material-icons prefix">{{ item.icon }}</i>
+            <input id="input-{{ forloop.index }}" type="{{ item.type }}" class="validate">
+            <label for="input-{{ forloop.index }}">{{ item.placeholder }}</label>
+        </div>
+        {% endfor %} 
+        {% if page.slug == 'login' %}
+        <p class="remember-p">
+            <input type="checkbox" id="check1" />
+            <label for="check1">记住密码</label>
+        </p>
+        {% endif %}
+        <a class="btn-floating btn-large btn-login waves-effect waves-light red">{{ data.btn_text }}</a>
+        <ul class="login-navigation">            
+            {% for link in data.links %}
+                <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+            {% endfor %}
+        </ul>
+    </form>
+    {% include footer.html %}
+</body>
+
+</html>

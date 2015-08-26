@@ -1,0 +1,25 @@
+.card.search-form{
+	overflow: inherit;
+	.row{
+		margin-bottom:0;
+	}
+
+	.card-content{
+		padding-bottom: 5px;
+	}
+
+	.card-action{
+		padding-top:0;
+		border-top:none;
+		a.btn,a.btn:hover {
+		  color: #fff;
+		}
+	}
+}
+
+.col-span{
+
+	input,select{
+		width: calc(50% - 5px);
+	}
+}

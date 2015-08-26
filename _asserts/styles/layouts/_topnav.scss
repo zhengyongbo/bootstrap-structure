@@ -1,0 +1,12 @@
+@charset 'utf-8';
+
+.mainheader { width:100%; height:100px; padding-top:20px; margin-bottom:20px; box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.2);
+background: -ms-linear-gradient(top,#fff,#eee);/* IE 10 */
+background:-moz-linear-gradient(top,#fff,#eee);/*ff*/ 
+background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#fff), to(#eee));/*Chrome*/ 
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eee));      /* Safari 4-5, Chrome 1-9*/
+background: -webkit-linear-gradient(top, #fff, #eee);   /*Safari5.1 Chrome 10+*/
+background: -o-linear-gradient(top, #fff, #eee);  /*Opera 11.10+*/}
+.mainheader .logo { width:185px; height:60px; margin:0 auto; float:left;}
+.mainheader .logo a { width:185px; height:60px; display:block;}
+.mainheader b { height:50px; margin:5px 0 5px 25px; padding-left:15px; border-left:solid 1px #ccc; float:left; font-size:24px; line-height:50px;}

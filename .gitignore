@@ -1,0 +1,10 @@
+.DS_Store
+prepros.cfg
+Thumbs.db
+node_modules/
+.sass-cache/
+.tmp/
+_site
+/.idea/
+**/*.log
+bower_components

@@ -1,0 +1,106 @@
+/* fluid-container */
+.fluid-container {
+    min-width:1140px;
+    max-width:1500px;
+    *width:1140px;
+    padding:0 30px;
+    margin:0 auto;
+
+}
+/* list-group */
+.list-group{
+	.list-group-item{
+		padding: 5px 15px;
+	}
+}
+/* panel */
+.panel.panel-info{
+	.panel-heading{
+		background:$baseColor;
+	}
+}
+.panel > .panel-heading > .panel-title > i {
+    font-size:18px;
+    margin: 0 5px 0 -5px;
+}
+/* col-lg col-md col-sm col-xs */
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* table */
+.table {
+    margin-bottom: 0;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    line-height: 2;
+    vertical-align: middle;
+    padding: 5px 10px;
+}
+th{
+    text-align: center;
+}
+
+/* pagination */
+.pagination {
+    margin: 0;
+}
+.pagination > li > a, .pagination > li > span {
+    color: $baseColor;
+}
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: $baseColor;
+    border-color: $baseColor;
+}
+
+/* list-group */
+.table .list-group .list-group-item .row-content {
+    display: inline-block;
+    min-height: 66px;
+    width: calc(100% - 115px);
+}
+.table .list-group .list-group-item .row-picture img.w85-h65 { width:85px; height:65px;}
+.table .list-group {
+    margin-bottom: 0;
+}
+
+/* slick-slide */
+.slick-slider {
+    margin-bottom: 0;
+}
+
+.slick-slide .image {
+    padding: 10px 5px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: #000;
+    opacity: 0.25;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+} 
+/* checkbox */
+.checkbox .checkbox-material::before {
+    height: 15px;
+    width: 15px;
+}
+.checkbox .checkbox-material .check {
+
+    height: 15px;
+    width: 15px;
+}
+.checkbox .checkbox-material .check::before {
+    margin-left: 4px;
+    margin-top: -6px;
+}
+.checkbox label {
+    margin-right: 15px;
+}

@@ -1,0 +1,14 @@
+# Dependencies
+markdown:         kramdown
+
+exclude:  ['/bower_components','/node_modules','/test','bower.json','CNAME','Gruntfile.js','LICENSE','package.json','README.md','Gemfile']
+
+# Server
+host:             0.0.0.0
+port:             9000
+url:              http://www.unclezheng.com
+encoding:         UTF-8
+
+production: false
+# production: true
+

@@ -1,0 +1,43 @@
+- text: 订单编号
+  controls:
+    - placeholder: 订单编号
+      controls_type: input
+      type: text
+
+- text: 线路编号
+  controls:
+    - placeholder: 线路编号
+      controls_type: input
+      type: text
+
+- text: 合同编号
+  controls:
+    - placeholder: 合同编号
+      controls_type: input
+      type: text
+
+- text: 合同金额
+  controls:
+    - placeholder: 最小金额
+      controls_type: input
+      type: text
+
+    - placeholder: 最大金额
+      controls_type: input
+      type: text
+
+- text: 供应商
+  controls:
+    - placeholder: 供应商
+      controls_type: select
+
+- text: 目的地
+  controls:
+    - placeholder: 
+      controls_type: select
+
+    - placeholder: 
+      controls_type: select
+
+
+

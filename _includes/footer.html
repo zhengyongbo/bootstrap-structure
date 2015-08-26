@@ -1,0 +1,7 @@
+<script type="text/javascript" src="{{ " asserts/scripts/vendor.min.js " | prepend: site.baseurl }}"></script>
+
+{% if site.github or site.production %}
+	<script type="text/javascript" src="{{ " asserts/scripts/main.min.js " | prepend: site.baseurl }}"></script>
+{% else %}
+	<script type="text/javascript" src="{{ " asserts/scripts/main.js " | prepend: site.baseurl }}"></script>
+{% endif %}

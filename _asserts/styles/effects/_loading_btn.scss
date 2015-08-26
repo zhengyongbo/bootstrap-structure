@@ -1,0 +1,38 @@
+$base: #fff;
+
+$dots: 3;
+$time: 150ms;
+
+@-webkit-keyframes fadeinout {
+    0%   { opacity: 0; }
+    50%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fadeinout {
+    0%   { opacity: 0; }
+    50%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.loading-btn {
+  text-transform: none;
+  span {
+    background: $base;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin-left: 5px;
+    
+    will-change: opacity;
+    -webkit-animation: fadeinout (($time * $dots) + ($time + 1000ms)) infinite;
+    animation: fadeinout (($time * $dots) + ($time + 1000ms)) infinite;
+  }
+  
+  @for $i from 1 through $dots {
+    span:nth-child(#{$i}) {
+      -webkit-animation-delay: $time * $i;
+      animation-delay: $time * $i;
+    }
+  }
+}
