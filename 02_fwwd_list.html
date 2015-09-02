@@ -1,0 +1,47 @@
+---
+title: 02_服务网点列表
+slug: 02_fwwd_list
+top_nav:
+  right_icon: false
+foot_nav: true
+---
+<div class="panel panel-default border-none box-shadow-none">
+    <div class="panel-heading">
+        <div class="clearfix hh-font-size-16 hh-font-weight">
+            <p class="pull-left">您的位置：暂无位置信息 </p>
+            <a class="pull-right grey-text text-darken-4" href="javascript:void(0)"><i class="mdi-action-autorenew mdi-2x line-height-1em"></i></a>
+        </div>
+        <ul class="pager no-margin hh-pt-10 bdt-1px">
+            <li class="previous"><a class="red lighten-5 red-text text-darken-4" href="javascript:void(0)"><i class="mdi-maps-my-location hh-pr-5"></i>离您最近的门店</a></li>
+        </ul>
+    </div>
+    <div class="panel-body hh-pb-0">
+        <div class="dropdown">
+            <a id="dLabel" class="btn white-text grey" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                重庆市门店
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a>重庆市门店</a></li>
+                <li><a>重庆市门店</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a>重庆市门店</a></li>
+            </ul>
+        </div>
+        <ul class="media-list media-list-area">
+            {% for item in site.data.02_fwwd_list %}
+            <li class="media">
+                <a href="javascript:void(0)">
+                    <div class="media-body">
+                        <div class="content-wrap clearfix">
+                            <p class="pull-left">{{ item.area_name }}</p>
+                            <span class="pull-right grey-text"><i class="mdi-hardware-keyboard-arrow-right mdi-2x line-height-1em "></i></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+

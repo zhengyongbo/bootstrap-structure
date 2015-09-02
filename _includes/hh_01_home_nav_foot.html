@@ -1,0 +1,9 @@
+<div class="hh-height-60"></div>
+<nav class="btn-group btn-group-justified hh-01-home-nav-foot" role="navigation">
+    {% assign home_foot_data = site.data.hh_home %}
+    {% for item in home_foot_data.01_nav_foot_icons %}
+        <a href="javascript:void(0)" class="btn grey lighten-2 {{ item.text_class }}">
+            <i class="{{ item.icon }} icon hh-font-size-24"></i><p class="hh-font-size-12">{{ item.text }}</p>
+        </a>
+    {% endfor %}
+</nav>

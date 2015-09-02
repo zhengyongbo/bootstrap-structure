@@ -1,0 +1,45 @@
+.collapse-panel {
+    border: none;
+    .panel-heading {
+        border-bottom: 1px solid #ccc;
+        border-left: 5px solid #EF5350;
+        padding: 0;
+        position: relative;
+        &:before {
+            content: ' ';
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-left: 6px solid #EF5350;
+            border-bottom: 5px solid transparent;
+            position: absolute;
+            top: 40%;
+        }
+    }
+    .panel-title {
+        a {
+            display: block;
+            padding: 20px;
+            i {
+                margin-top: -8px;
+                color:#EF5350;
+                &:before {
+                    -webkit-transition: all .5s;
+                    -moz-transition: all .5s;
+                    -ms-transition: all .5s;
+                    -o-transition: all .5s;
+                    transition: all .5s;
+                }
+            }
+            &.collapsed {
+                i {
+                    &:before {
+                        -webkit-transform: rotate(180deg);
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+}
+

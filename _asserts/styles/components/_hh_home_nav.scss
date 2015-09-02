@@ -1,0 +1,25 @@
+.hh-home-nav{
+	height:115px;
+	background: linear-gradient(to bottom, #ece7dc 0%,#fdfcfb 100%);
+	.btn{
+		padding:6px 3px;
+		.iconfont{
+			width:55px;
+			height:55px;
+			padding:10px;
+			margin:10px 0 5px 0;
+			border-radius:50%;
+			line-height:55px;
+			text-align:center;
+			font-size:35px;
+			-webkit-text-stroke-width:0;
+		}
+	}
+}//hh-home-nav
+.hh-notice{
+	height:36px;
+	line-height:36px;
+	overflow:hidden;
+	border-top:solid 1px #e5dfc2;
+
+}//hh-notice

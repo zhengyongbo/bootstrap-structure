@@ -1,0 +1,45 @@
+---
+title: 02_门店用户中心
+slug: 02_md_user_center
+foot_nav: true
+foot_nav_btns: false
+---
+<div class="panel-primary grey lighten-5">
+    <section class="jumbotron user-center-banner colorful no-margin">
+        <figure class="text-center">
+            <a href="#">
+                <img class="img-circle" src="asserts/images/02_md_07.png" alt="...">
+                <figcaption class="white-text hh-mt-10 hh-font-size-16">点击登录，体验更多</figcaption>
+            </a>
+        </figure>
+    </section>
+    <section class="hh-mt-20">
+        {% assign user_data = site.data.02_user_center %}
+        <ul class="panel-body list-group no-padding user-center-list">
+            {% for item in user_data.section1 %}
+            <li class="list-group-item">
+                <a href="#" class="clearfix">
+                    <i class="pull-left {{ item.icon }} mdi-2x grey-text text-darken-4"></i>
+                    <span class="pull-left hh-font-size-16 hh-plr-10">{{ item.list_title }}</span>
+                    <i class="pull-right mdi-hardware-keyboard-arrow-right mdi-2x red-text text-darken-3"></i>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <ul class="panel-body list-group no-padding user-center-list">
+            {% for item in user_data.section2 %}
+            <li class="list-group-item">
+                <a href="#" class="clearfix">
+                    <i class="pull-left {{ item.icon }} mdi-2x grey-text text-darken-4"></i>
+                    <span class="pull-left hh-font-size-16 hh-plr-10">{{ item.list_title }}</span>
+                    <i class="pull-right mdi-hardware-keyboard-arrow-right mdi-2x red-text text-darken-3"></i>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>
+
+
+
+

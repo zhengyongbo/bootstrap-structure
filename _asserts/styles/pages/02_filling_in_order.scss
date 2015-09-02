@@ -1,0 +1,80 @@
+.order-msg-table {
+    tr {
+        th, td {
+            line-height: 42px !important;
+            height: 42px;
+            span, input {
+                float: left;
+            }
+            input {
+                line-height: 30px !important;
+                height: 30px !important;
+            }
+            input.goDate,
+            input.texts,
+            textarea {
+                float: none;
+                width: 100%;
+                text-indent: 10px;
+                border: 1px solid #ccc;
+            }
+            strong {
+                color: #f00;
+            }
+            input.num {
+                width: 10%;
+                text-align: center;
+            }
+            span.ctrl {
+                line-height: 32px;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                color: #fff;
+                background-color: #ff5367;
+                cursor: pointer;
+                &.disable{
+                    cursor:default;
+                    color: #000;
+                    background-color: #ECECEC;
+                    &:hover{
+                        background-color: #ccc;
+                    }
+                }
+                &:hover {
+                    background-color: #DA9D9D;
+                }
+            }
+            select {
+                line-height: 34px;
+                overflow: hidden;
+                height: 34px;
+                text-indent: 10px;
+                color: #666;
+                border: 1px solid #ccc;
+                background: url(../images/select_new_arrow.png) no-repeat right;
+                appearance: none;
+                -webkit-appearance: none;
+                option {
+                    color: #444;
+                }
+            }
+            select.default {
+                width: 100%;
+                color: #ccc;
+            }
+            select.twins {
+                width: 45%;
+                margin-right: 20px;
+                color: #444;
+            }
+        }
+        th {
+            font-weight: normal;
+            width: 20%;
+            text-align: right;
+            background-color: #f0f0f0;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+tour_nav:
+  - text: 出发地
+    class: active
+    pull_down: 
+
+  - text: 目的地
+    class: 
+    pull_down: 
+
+  - text: 默认排序
+    class: 
+    pull_down: 
+
+ad_pic:
+  url: hh-pic.jpg
+  text: 昆明<新西兰-南北岛8日游>宿梯卡坡，山顶自助餐，赠玛塔玛塔，萤火虫洞，7月观星

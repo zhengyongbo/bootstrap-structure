@@ -1,4 +1,61 @@
 ---
 title: 01_首页
 slug: 01_home
+top_nav: false
 ---
+
+<!-- 01_home 门店首页主体 开始 -->
+<div class="hh-01-home">
+	<!-- 头部 开始 -->
+	<header class="header white-text" role="banner">
+
+		<div class="logo" ><a href="">海航乐游</a></div>
+		
+		<div class="head-pic">
+			<img src="asserts/images/hh-pic.jpg" alt="">
+			<div class="back-red"></div>
+			<div class="back-orange"></div>
+			<div class="text hh-font-size-12">金牌旅游顾问金牌旅游顾问</div>
+		</div>
+
+		<div class="info hh-font-size-16"><span class="hh-font-size-24">小张</span> ｜029-88888888<p>鱼洞门市部</p></div>
+
+		<!-- 搜索 开始 -->
+		{% include hh_home_search.html %}
+		<!-- 搜索 结束 -->
+
+	</header>
+	<!-- 头部 结束 -->
+
+	<!-- 导航 开始 -->
+	{% include hh_home_nav.html %}
+	<!-- 导航 结束 -->
+
+	<!-- 线路展示 开始 -->
+	<section role="group">
+		<div class="hh-home-title clearfix">
+			<h4 class="pull-left hh-font-size-16 black-text">旅游顾问推荐</h4>
+			<a class="pull-right hh-font-size-12 black-text" href="">更多&gt;</a>
+		</div>
+		{% include hh_line_list.html %}
+	</section>
+	<!-- 线路展示 结束 -->
+
+	<!-- 热门目的地 开始 -->
+	<section role="group">
+		<div class="hh-home-title clearfix">
+			<h4 class="pull-left hh-font-size-16 black-text">热门目的地</h4>
+			<a class="pull-right hh-font-size-12 black-text" href="">更多&gt;</a>
+		</div>
+	</section>
+	{% include hh_home_destination.html %}
+	<!-- 热门目的地 结束 -->
+
+	<!-- 底部导航 开始 -->
+	<footer role="contentinfo">
+		{% include hh_01_home_nav_foot.html %}
+	</footer>
+	<!-- 底部导航 结束 -->
+
+</div>
+<!-- 01_home 门店首页主体 结束 -->

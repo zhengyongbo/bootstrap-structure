@@ -1,0 +1,42 @@
+.hh-02-home{
+	.header{
+		position:relative;
+		.logo-name{
+			height:90px;
+			padding:0 10px;
+			overflow:hidden;
+			background:url(../images/hh-02-home-top-back.jpg) right center no-repeat;
+			.logo{
+				padding-top:23px;
+			}
+			.text { 
+				line-height: 90px;
+				text-shadow:3px 3px 5px rgba(55,0,0,.75);
+			}
+		}//logo-name
+		.ad-pic{
+			.w4-h3{
+				overflow:hidden;
+				position:relative;
+				.scale{
+				width:100%;
+				}
+				.pic{
+					padding:0;
+					margin:0;
+					position:absolute;
+					top:0;
+					right:0;
+					bottom:0;
+					left:0;
+					img{
+						width:100%;
+						height:auto;
+						max-height:150%;
+						min-height:100%;
+					}
+				}
+			}//w4-h3
+		}//ad-pic
+	}//header
+}//hh-02-home

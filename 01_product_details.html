@@ -1,0 +1,65 @@
+---
+title: 01_产品详情
+slug: 01_product_details
+---
+<p class="no-margin hh-padding-15 grey lighten-4"><a href="" class="red-text text-darken-2 hh-font-weight">查看出境游全部产品 &gt;</a></p>
+<div class="pro-desc-wrap">
+	<div class="pro-img-wrap">
+		<img src="asserts/images/01_product_details_01.jpg" alt="">
+		<div class="pro-desc-actions hh-padding-15 text-right">
+			<a href=""><i class="mdi-social-share"></i>分享</a>
+			<a href=""><i class="mdi-action-favorite"></i>收藏</a>
+		</div>
+	</div>
+	<div class="pro-info-wrap">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-8 hh-plr-5">
+					<ul class="list-inline hh-font-size-12">
+					  <li>出发地：<small>重庆</small></li>
+					  <li>编号：<small>4507452</small></li>
+					  <li>请提前<small>15天</small>预订</li>
+					</ul>
+					<h4 class="pro-info-name hh-font-weight">
+					  "初恋系列" 重庆-越南岘港4天3晚浪漫自由行
+					</h4>
+				</div>
+				<div class="col-xs-4 hh-plr-5">
+					<div class="pro-price-wrap hh-mt-10">
+						<div class="tooltip top" role="tooltip">
+					      <div class="tooltip-arrow"></div>
+					      <div class="tooltip-inner amber accent-2  red-text text-darken-2">
+					        手机预订专享
+					      </div>
+					    </div>
+					    <h3 class="price-text no-margin text-center red-text text-darken-2">
+					    	￥4130<small>起</small>
+					    </h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pro-detail-wrap grey lighten-2 hh-padding-15">
+	{% for item in site.data.01_product_details %}
+		<div class="panel collapse-panel">
+		    <div class="panel-heading" role="tab" id="heading{{ forloop.index }}">
+		        <h4 class="panel-title">
+		        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{ forloop.index }}" aria-expanded="true" aria-controls="collapse{{ forloop.index }}" class='{% if forloop.first %} {{ }} {% else %} {{'collapsed'}} {% endif %}'>
+		          {{ item.heading }}
+		          <i class="mdi-hardware-keyboard-arrow-up mdi-2x pull-right"></i>
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapse{{ forloop.index }}" class="panel-collapse collapse {% if forloop.first %} {{ 'in' }} {% endif %}" role="tabpanel" aria-labelledby="heading{{ forloop.index }}">
+		        <div class="panel-body">
+		            1、天合联盟成员-越南航空,空客A321重庆直飞岘港，184个机位，16个商务舱（客人可根据自身需求选择升舱），黄金时段飞行，免去旅途劳累，给您舒心优质的体验； 2、全程自由行，只安排机票、酒店、当地接送机，时间全由你自行把控； 3、酒店自由搭配，满足不同人群的不同需求； 4、全程不进购物店，不推荐自费，享受真正的自由假期； 5、越南岘港初体验，美溪沙滩-全球六大最美沙滩之一； 6、恋上一座城，岘港-《美国地理杂志》评为人生必去的五十个地方之一； 7、以最低廉的价格品尝最新鲜的生猛海鲜，休闲于有着“东方夏威夷”美誉的海滨城市。
+		        </div>
+		    </div>
+		</div>
+	{% endfor %}
+</div>
+
+{% include bottom_nav_1.html %}

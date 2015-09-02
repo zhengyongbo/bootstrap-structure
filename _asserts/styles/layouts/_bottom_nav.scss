@@ -1,0 +1,15 @@
+.hh-height-50{
+	height:50px;
+}
+.bottom-nav-1{
+	width:100%;
+	max-width:640px;
+	min-width:320px;
+	margin:0 auto;
+	position:fixed;
+	bottom:0;
+	height:50px;
+	.btn-group-lg > .btn, .btn-lg{
+		line-height:30px;
+	}
+}

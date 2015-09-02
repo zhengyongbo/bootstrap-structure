@@ -1,0 +1,33 @@
+---
+title: 02_订单提交
+slug: 02_submit_order
+top_nav: 
+  right_icon: ture
+  left_icon: false
+---
+<div class="panel-primary">
+    <section class="success-title">
+        <h2 class="text-center no-margin"><i class="glyphicon glyphicon-ok pink lighten-1 white-text icon-got"></i>订单已成功提交 </h2>
+    </section>
+    <section>
+        <p class="warning-content">为保证您的成功出行，重庆市巴南区，<span class="red-text">【鱼洞门市部】</span>的旅游顾问会尽快与您取得联系及确认位置，请您保持电话畅通。
+        </p>
+    </section>
+    <section class="panel-body">
+        <form>
+            <table class="table table-bordered submited-order">
+                {% for item in site.data.02_submit_order %}
+                <tr>
+                    <th>{{ item.subName }}</th>
+                    <td>{{ item.content }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </form>
+        <p class="help-content"><span>></span> 当天20点以后的订单客服将在第二天上午与您取得联系及确认位置。<br/>
+        <span>></span> 当订单得到位置确认并在您签约付款完成后正式生效。 
+    </section>
+</div>
+
+
+

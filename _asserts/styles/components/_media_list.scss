@@ -1,0 +1,41 @@
+.bdt-1px
+{
+    border-top: 1px solid #ccc;
+}
+
+.media-list-mine
+{
+    li
+    {
+        margin: 0;
+
+        border-bottom: 1px solid #ccc;
+        a
+        {
+            display: block;
+
+            padding: 15px 0;
+        }
+        a:hover
+        {
+            background-color: #fafafa;
+        }
+    }
+}
+
+.media-list-area
+{
+    margin-top: 15px;
+    li
+    {
+        border-bottom: 1px solid #ccc;
+        &:hover
+        {
+            a,
+            i
+            {
+                color: #a40c0d;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.hh-height-60{
+	height:60px;
+}
+.hh-01-home-nav-foot{
+	max-width:640px;
+	min-width:320px;
+	margin:0 auto;
+	position:fixed;
+	bottom:0;
+	height:50px;
+	a{
+		height:50px;
+		border-right:solid 1px #fff;
+		overflow:hidden;
+		.icon{
+			display:block;
+			padding-top:5px;
+		}
+		p {
+		    margin: 0;
+		}
+	}
+	a:last-child{
+		border-right:none;
+	}
+	.btn{
+		padding:0 5px;
+		border-radius: 0;
+	}
+}

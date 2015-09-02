@@ -1,0 +1,27 @@
+.hh-line-list-page-nav{
+		height:45px;
+		a {
+			border-right:solid 1px #f0f0f0;
+			line-height:45px;
+			.text-icon{
+				padding-left:5px;
+				vertical-align: middle;
+				&:after{
+					@include icon-before;
+					content: "\e7c1";
+					font-size:24px;
+					color:#f194a0;
+					vertical-align:middle;
+				}
+				&.active:after{
+					content: "\e7c4";
+				}
+			}
+		}
+		a:last-child{
+			border-right:none;
+		}
+		.btn{
+			padding:0;
+		}
+	}//hh-line-list-page-nav

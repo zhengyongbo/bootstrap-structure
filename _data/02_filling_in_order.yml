@@ -1,0 +1,68 @@
+- title: 订单信息
+  items: 
+    - subname: 编号
+      text: 4507452
+      type: label
+    - subname: 产品名称
+      text: 【初恋系列】重庆-越南岘港4天3
+      type: label
+    - subname: 出行日期
+      type: input-date
+    - subname: 成人
+      type: btn_group
+    - subname: 儿童
+      type: btn_group
+
+
+- title: 联系方式
+  items: 
+    - subname: 姓名
+      type: input
+      input: 
+        type: text
+        placeholder: 请填写正确的真实姓名
+      star: true
+    - subname: 手机号码
+      type: input
+      input: 
+        type: text
+        placeholder: 请填写您的手机号码
+      star: true
+    - subname: 电子邮箱
+      type: input
+      input:
+        type: email
+        placeholder: 请填写您的电子邮箱
+      star: true
+    - subname: 订单留言
+      type: textarea
+      placeholder: 如果您有特殊要求，请留言，不超过300字
+
+- title: 专属顾问<small class='red-text'>（全国连锁旅游品牌，闪电响应，一对一贴心服务）</small>
+  items:
+    - subname: 所在省/市
+      type: select
+      select:
+        num: 2
+        options:
+          - 重庆
+          - 重庆
+          - 重庆
+    - subname: 所在区域
+      type: select
+      select:
+        num: 1
+        options:
+          - 请选择
+          - 重庆
+          - 重庆
+    - subname: 网点服务
+      type: select
+      select:
+        num: 1
+        options:
+          - 请选择
+          - 重庆
+          - 重庆
+
+

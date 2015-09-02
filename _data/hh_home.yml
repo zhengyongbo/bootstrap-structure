@@ -1,0 +1,69 @@
+tour_icons:
+  - icon_content: '&#xe600;'
+    text: 周边游
+    bg_class: brown lighten-2
+    both: true
+
+  - icon_content: '&#xe601;'
+    text: 国内游
+    bg_class: red darken-2
+    both: true
+
+  - icon_content: '&#xe605;'
+    text: 出境游
+    bg_class: brown lighten-2
+    both: true
+
+  - icon_content: '&#xe603;'
+    text: 门店详情
+    bg_class: brown lighten-2
+    slug: 01_home
+
+  - icon_content: '&#xe604'
+    text: 服务网点
+    bg_class: brown lighten-2
+    slug: 02_home
+
+notice_text: 重庆包机直飞岘港1999元起！8月逢周四出发，位子有限，先到先得！
+
+ad_pic:
+  url: hh-pic.jpg
+  text: 昆明<新西兰-南北岛8日游>宿梯卡坡，山顶自助餐，赠玛塔玛塔，萤火虫洞，7月观星
+
+line_images:
+  url: hh-pic.jpg
+  text: 昆明<新西兰-南北岛8日游>宿梯卡坡，山顶自助餐，赠玛塔玛塔，萤火虫洞，7月观星
+  price: <b class="red-text text-darken-2">￥100</b><small>起</small>
+
+destination_text: 马尔代夫马尔代夫
+
+01_nav_foot_icons:
+  - icon: mdi-action-home
+    text: 首页
+    text_class: red-text text-darken-2
+
+  - icon: mdi-communication-call
+    text: 电话
+    text_class: grey-text text-darken-4
+
+  - icon: mdi-social-person
+    text: 我的
+    text_class: grey-text text-darken-4
+
+  - icon: mdi-notification-sms
+    text: 微信
+    text_class: grey-text text-darken-4
+
+  - icon: mdi-social-people
+    text: 关于
+    text_class: grey-text text-darken-4
+
+02_nav_foot_icons:
+  - icon: mdi-action-home
+    text: 首页
+
+  - icon: mdi-social-person
+    text: 我的订单
+
+  - icon: mdi-social-people
+    text: 了解乐游

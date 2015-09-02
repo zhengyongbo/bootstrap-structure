@@ -1,0 +1,25 @@
+.hh-home-title{
+	padding:20px 15px 10px 15px;
+	line-height:16px;
+	h4{
+		margin:0;
+		padding-left:10px;
+		border-left:solid 5px #d32f2f;
+	}
+}//hh-home-title
+.hh-line-list{
+	padding-left:0;
+	margin:0 10px;
+	.media{
+		padding:10px 0 9px 0;
+		margin-top:0;
+		border-bottom:solid 1px #eee;
+		.media-object{
+			width:120px;
+			height:90px;
+		}
+	}
+	.media:last-child{
+		border-bottom:none;
+	}
+}

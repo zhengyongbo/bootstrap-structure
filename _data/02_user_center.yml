@@ -1,0 +1,25 @@
+section1:
+  - icon: mdi-action-assignment
+    list_title: 我的订单
+
+  - icon: mdi-action-favorite-outline
+    list_title: 我的收藏
+
+  - icon: mdi-action-alarm
+    list_title: 我的提醒
+
+  - icon: mdi-communication-quick-contacts-dialer
+    list_title: 我的专属顾问
+section2:
+  - icon: mdi-communication-contacts
+    list_title: 修改常用联系人
+
+  - icon: mdi-content-create
+    list_title: 修改手机号码
+
+  - icon: mdi-content-markunread
+    list_title: 修改电子邮箱
+
+  - icon: mdi-action-lock
+    list_title: 修改密码
+

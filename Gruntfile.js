@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                 tasks: ['copy:dist', 'uglify']
             },
             images: {
-                files: ['<%= config.app %>/asserts/images/{,*/}*'],
+                files: ['<%= config.app %>/images/{,*/}*'],
                 tasks: ['copy:images']
             }
         },
@@ -109,7 +109,7 @@ module.exports = function(grunt) {
                         'asserts/images/{,*/}*.webp',
                         '{,*/}*.html',
                         'scripts/*.js',
-                        'font/{,*/}*.*',
+                        'fonts/{,*/}*.*',
                         'styles/fonts/{,*/}*.*'
                     ]
                 }, {
@@ -164,8 +164,7 @@ module.exports = function(grunt) {
                     cwd: '<%= config.app %>',
                     dest: '<%= config.dist %>',
                     src: [
-                        'asserts/images/*.png',
-                        'styles/*.jpg'
+                        'images/{,*/}*.*',
                     ]
                 }]
             }

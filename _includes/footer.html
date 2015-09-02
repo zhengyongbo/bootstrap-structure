@@ -5,3 +5,48 @@
 {% else %}
 	<script type="text/javascript" src="{{ " asserts/scripts/main.js " | prepend: site.baseurl }}"></script>
 {% endif %}
+
+{% assign need_map = false %}
+
+{% if page.slug == "01_md_details" or page.slug == "02_md_details" %}
+	{% assign need_map = true %}
+{% endif %}
+
+{% if need_map %}
+	<script src="http://api.map.baidu.com/api?v=2.0&ak=tN9MC3mbmIOPW0Tc1dEz8QGm"></script>
+{% endif %}
+
+<script type="text/javascript">
+	
+	{% if need_map %}
+	var opts = {
+            width: 330, // 信息窗口宽度
+            height: 50, // 信息窗口高度
+            title: "鱼乡营业部" // 信息窗口标题
+        },
+        infoWindow = new BMap.InfoWindow("地址：重庆市巴南区鱼洞下河路31-4", opts), // 创建信息窗口对象
+
+        map = new BMap.Map("map"),
+        point = new BMap.Point(115.9819690000, 28.6970830000),
+        showinfo = function() {
+            map.centerAndZoom(point, 18);
+            map.clearOverlays();
+            var marker = new BMap.Marker(point);
+            map.addOverlay(marker);
+            marker.openInfoWindow(infoWindow); // 打开信息窗口
+            marker.addEventListener("dragend", function(e) {
+                this.openInfoWindow(infoWindow);
+                infoWindow.redraw();
+            });
+            marker.addEventListener("click", function(e) {
+                this.openInfoWindow(infoWindow);
+                infoWindow.redraw();
+            });
+        };
+    showinfo();
+    // map.enableScrollWheelZoom();
+    map.enableDoubleClickZoom(); //启用双击放大。
+    map.addControl(new BMap.NavigationControl());
+	
+	{% endif %}
+</script>

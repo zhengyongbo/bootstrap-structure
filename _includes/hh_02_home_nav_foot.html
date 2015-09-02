@@ -1,0 +1,15 @@
+<!-- 底部导航 开始 -->
+<footer class="hh-02-foot" role="contentinfo">
+	{% if page.foot_nav_btns == null %}
+    <nav class="btn-group btn-group-justified hh-02-home-nav-foot" role="navigation">
+        {% assign home_foot_data = site.data.hh_home %}
+        {% for item in home_foot_data.02_nav_foot_icons %}
+        <a href="javascript:void(0)" class="btn red darken-2 white-text hh-font-size-16">
+            <i class="{{ item.icon }} icon hh-font-size-20"></i><span>{{ item.text }}</span>
+        </a>
+        {% endfor %}
+    </nav>
+    {% endif %}
+    <small class="hh-state text-center hh-font-size-14">2004-2015 © 海航乐游 loyoyo.com All rights reserved.</small>
+</footer>
+<!-- 底部导航 结束 -->

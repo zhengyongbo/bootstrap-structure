@@ -1,0 +1,14 @@
+@mixin icon-before {
+    speak: none;
+    display: inline-block;
+    font-family: "Material-Design-Icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}

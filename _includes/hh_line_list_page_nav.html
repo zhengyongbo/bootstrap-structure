@@ -1,0 +1,8 @@
+<nav class="btn-group btn-group-justified hh-line-list-page-nav" role="navigation">
+    {% assign home_data = site.data.hh_line_list_page %}
+    {% for item in home_data.tour_nav %}
+        <a href="javascript:void(0)" class="btn black-text text-center">
+            <span class=" hh-font-size-16 text-icon {{ item.class }}">{{ item.text }}</span>
+        </a>
+    {% endfor %}
+</nav>

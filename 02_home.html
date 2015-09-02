@@ -1,4 +1,65 @@
 ---
 title: 02_首页
 slug: 02_home
+top_nav: false
+foot_nav: true
 ---
+<!-- 02_home 区域线路首页主体 开始 -->
+<div class="hh-02-home">
+	<!-- 头部 开始 -->
+	<header class="header white-text" role="banner">
+
+		<div class="logo-name">
+			<div class="pull-left logo"><img src="asserts/images/hh-02-home-logo.png" alt=""></div>
+			<div class="pull-right hh-font-size-16 text">全国连锁旅游机构</div>
+		</div>
+
+		<div class="ad-pic">
+			<div class="w4-h3">
+				<img class="scale" src="asserts/images/space-w4-h3.png" alt="nothing">
+				<ul class="pic">
+					{% assign item = site.data.hh_home.ad_pic %}
+				    {% for i in (1..1) %}
+				        <li>
+				            <a href="#" class="grey-text text-darken-3">
+				                <img class="media-object" src="asserts/images/{{ item.url }}" alt="{{ item.text }}">
+				            </a>
+				        </li>
+				    {% endfor %}
+				</ul>
+			</div>
+		</div>
+
+		<!-- 搜索 开始 -->
+		{% include hh_home_search.html %}
+		<!-- 搜索 结束 -->
+
+	</header>
+	<!-- 头部 结束 -->
+
+	<!-- 导航 开始 -->
+	{% include hh_home_nav.html %}
+	<!-- 导航 结束 -->
+
+	<!-- 线路展示 开始 -->
+	<section role="group">
+		<div class="hh-home-title clearfix">
+			<h4 class="pull-left hh-font-size-16 black-text">本周热销</h4>
+			<a class="pull-right hh-font-size-12 black-text" href="">更多&gt;</a>
+		</div>
+		{% include hh_line_list.html %}
+	</section>
+	<!-- 线路展示 结束 -->
+
+	<!-- 热门目的地 开始 -->
+	<section role="group">
+		<div class="hh-home-title clearfix">
+			<h4 class="pull-left hh-font-size-16 black-text">热门目的地</h4>
+			<a class="pull-right hh-font-size-12 black-text" href="">更多&gt;</a>
+		</div>
+	</section>
+	{% include hh_home_destination.html bg_color= true %}
+	<!-- 热门目的地 结束 -->
+
+</div>
+<!-- 02_home 区域线路首页主体 结束 -->

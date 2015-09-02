@@ -1,0 +1,8 @@
+<ul class="hh-home-destination clearfix">
+    {% assign item = site.data.hh_home.destination_text %}
+    {% for i in (1..16) %}
+        <li class="col-xs-3 text-center">
+            <a class="hh-font-size-14 black-text {% if include.bg_color %} {{ 'orange lighten-5' }} {% endif %}" href="#">{{ item }}</a>
+        </li>
+    {% endfor %}
+</ul>

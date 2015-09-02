@@ -1,0 +1,33 @@
+.hh-line-list-page{
+	.ad-pic{
+		.w24-h5{
+			overflow:hidden;
+			position:relative;
+			.scale{
+			width:100%;
+			}
+			.pic{
+				padding:0;
+				margin:0;
+				position:absolute;
+				top:0;
+				right:0;
+				bottom:0;
+				left:0;
+				img{
+					width:100%;
+					height:auto;
+					max-height:150%;
+					min-height:100%;
+				}
+			}
+		}//w24-h5
+	}//ad-pic
+	.more{
+		a{
+			height:45px;
+			display:block;
+			line-height:45px;
+		}
+	}//more
+}//hh-line-list-page

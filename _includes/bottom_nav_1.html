@@ -1,0 +1,14 @@
+<div class="hh-height-50 clearfix"></div>
+{% assign nav_data = site.data.bottom_nav_1[page.slug] %}
+<div class="bottom-nav-1">
+{% for item in nav_data %}
+	<div class="{{ item.class }}">
+		<a href="#" class="btn btn-block btn-lg border-radius-none {{ item.btn_class }}">
+		{% if item.i_class %}
+		<i class="{{ item.i_class }}"></i>
+		{% endif %}
+		{{ item.text }}
+		</a>
+	</div>
+{% endfor %}
+</div>

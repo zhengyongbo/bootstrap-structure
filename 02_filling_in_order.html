@@ -1,0 +1,73 @@
+---
+title: 02_订单填写
+slug: 02_filling_in_order
+top_nav: 
+  right_icon: false
+  left_icon: false
+---
+<div class="panel-primary">
+    <div class="panel-body hh-padding-5 hh-pt-0">
+        <form>
+            {% assign form_data = site.data.02_filling_in_order %} {% for form_item in form_data %}
+            <section>
+                <header>
+                    <h2 class="hh-font-size-16">{{ form_item.title }}</h2>
+                </header>
+                <table class="table table-bordered order-msg-table">
+                    {% for item in form_item.items %}
+                    <tr>
+                        <th>
+                            {% if item.star %}
+                            <strong>*</strong> {% endif %} {{ item.subname }}
+                        </th>
+                        <td>
+                            {% case item.type %} {% when 'label' %} {{ item.text }} {% when 'input-date' %}
+                            <input type="date" class="goDate inset-shadow"> {% when 'btn_group' %}
+                            <span class="ctrl disable"><i class="glyphicon glyphicon-minus"></i></span>
+                            <input type="number" class="num" placeholder="1">
+                            <span class="ctrl"><i class="glyphicon glyphicon-plus"></i></span> {% when 'input' %}
+                            <input type="{{ item.input.type }}" placeholder="{{ item.input.placeholder }}" class="texts inset-shadow"> {% when 'textarea' %}
+                            <textarea placeholder="{{ item.placeholder }}" class="inset-shadow"></textarea>
+                            {% when 'select' %} {% for i in (1..item.select.num) %}
+                            <select name="" class="default {% if item.select.num ==2 %} {{ 'twins' }} {% endif %} inset-shadow">
+                                {% for opt in item.select.options %}
+                                <option value="forloop.index" {% if forloop.first %} {{ "select='selected'" }} {% endif %}>{{ opt }}</option>
+                                {% endfor %}
+                            </select>
+                            {% endfor %} {% endcase %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </section>
+            {% endfor %}
+        </form>
+    </div>
+</div>
+<!-- 弹窗日历 开始 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                {% include hh_calendar.html %}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 弹窗日历 结束 -->
+
+{% include bottom_nav_1.html %}
+
+
+
+
+
+

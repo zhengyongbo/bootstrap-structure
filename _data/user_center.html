@@ -1,0 +1,27 @@
+---
+layout: default
+title: 用户中心
+slug: scene_list
+top_nav: top_nav_style1
+bottom_nav: bottom_nav_style2
+right_side:
+  text: 退出
+  url: #
+order_id: 订单号：123456 
+---
+
+<div class="main-container hh-order-row-content">
+	<div class="hh-back">
+		<h4 class="hh-plr-10">aaa3564，您好！ 欢迎来乐游微信端</h4>
+	    <div class="btn-group btn-group-justified my-btn-group">
+	        <a href="javascript:void(0)" class="btn btn-default hh-plr-0"><i class="mdi-notification-event-note"></i>所有</a>
+	        <a href="javascript:void(0)" class="btn btn-default hh-plr-0"><i class="mdi-notification-event-busy"></i>待支付</a>
+	        <a href="javascript:void(0)" class="btn btn-default hh-plr-0"><i class="mdi-notification-event-available"></i>已支付</a>
+	    </div>
+	</div>
+    <div class="border-div">
+        全部订单
+    </div>
+    {% include my_order.html %}
+</div>
+

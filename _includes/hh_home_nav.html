@@ -1,0 +1,14 @@
+<nav class="btn-group btn-group-justified hh-home-nav" role="navigation">
+    {% assign home_data = site.data.hh_home %}
+    {% for item in home_data.tour_icons %}
+    	{% if item.both or item.slug == page.slug %}
+        <a href="javascript:void(0)" class="btn red-text text-darken-2">
+            <i class="iconfont {{ item.bg_class }} white-text">{{ item.icon_content }}</i><p class="hh-font-size-16">{{ item.text }}</p>
+        </a>
+        {% endif %}
+    {% endfor %}
+</nav>
+<div class="hh-notice yellow lighten-4">
+	<i class="mdi-av-volume-up grey-text hh-plr-10"></i>
+	<a class="blue-text darken-4-text" href="">{{ home_data.notice_text }}</a>
+</div>

@@ -1,0 +1,33 @@
+<div class="hh-line-list-page">
+	
+	<!-- 条件选择 开始 -->
+	{% include hh_line_list_page_nav.html %}
+	<!-- 条件选择 结束 -->
+
+	<!-- 图片广告 开始 -->
+	<div class="ad-pic">
+		<div class="w24-h5">
+			<img class="scale" src="asserts/images/space-w24-h5.png" alt="nothing">
+			<ul class="pic">
+				{% assign item = site.data.hh_line_list_page.ad_pic %}
+			    {% for i in (1..1) %}
+			        <li>
+			            <a href="#" class="grey-text text-darken-3">
+			                <img class="media-object" src="asserts/images/{{ item.url }}" alt="{{ item.text }}">
+			            </a>
+			        </li>
+			    {% endfor %}
+			</ul>
+		</div>
+	</div>
+	<!-- 图片广告 结束 -->
+
+	<!-- 线路展示 开始 -->
+	<section role="group">
+		<div class="hh-pt-10 hh-plr-10 hh-font-size-1 grey-text text-lighten-12">您当前选择：重庆出发 ｜ 所有出境目的地产品</div>
+		{% include hh_line_list.html %}
+		<div class="more hh-margin-10"><a class="brown lighten-5 text-center" href="" title="加载更多">加载更多</a></div>
+	</section>
+	<!-- 线路展示 结束 -->
+
+</div>

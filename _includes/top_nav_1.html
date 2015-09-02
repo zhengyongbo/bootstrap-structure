@@ -1,0 +1,17 @@
+{% assign top_nav = page.top_nav %}
+
+<nav class="top-nav clearfix {{ top_nav.class }}">
+	{% if top_nav.left_icon %}
+    <a href="index.html" class="pull-left left-angel">
+        <i class="mdi-hardware-keyboard-arrow-left"></i>
+    </a>
+    {% endif %}
+	
+	{% if top_nav.right_icon %}
+    <a href="{{ top_nav.right_url }}" class="pull-right right-angel">        		
+    	<i class="{{ top_nav.icon_class }}"></i>
+	</a>
+	{% endif %}
+
+	<h3 class="text-center no-margin">{{ page.title }}</h3>
+</nav>

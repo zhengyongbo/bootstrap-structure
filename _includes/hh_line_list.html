@@ -1,0 +1,18 @@
+<ul class="hh-line-list">
+    {% assign item = site.data.hh_home.line_images %}
+    {% for i in (1..5) %}
+        <li class="media">
+            <a href="#" class="grey-text text-darken-3">
+                <div class="media-left">
+                    <img class="media-object" src="asserts/images/{{ item.url }}" alt="线路推荐{{ i }}">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading hh-font-size-14">{{ item.text }}</h4>
+                    <div class="price text-right hh-font-size-18">
+                        {{ item.price }}
+                    </div>
+                </div>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,18 @@
+01_product_details:
+  - class: col-xs-7 no-padding
+    btn_class: white-text grey darken-1 hh-font-size-16
+    text: 联系客服
+    i_class: mdi-communication-phone
+
+  - class: col-xs-5 no-padding
+    btn_class: white-text red lighten-1 hh-font-size-18
+    text: 立即预订
+
+02_filling_in_order:
+  - class: col-xs-7 no-padding
+    btn_class:  red-text text-darken-4 grey darken-1 text-left
+    text: <small class='white-text hh-font-size-16'>总额：</small> <span class="hh-font-size-22 hh-font-weight">￥0</span>
+
+  - class: col-xs-5 no-padding
+    btn_class: white-text red lighten-1 hh-font-size-18
+    text: 立即预订

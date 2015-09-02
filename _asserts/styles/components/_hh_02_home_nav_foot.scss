@@ -1,0 +1,35 @@
+.hh-02-foot {
+	width:100%;
+	max-width:640px;
+	min-width:320px;
+	margin:0 auto;
+    .hh-02-home-nav-foot {
+        height: 50px;
+        a {
+            height: 50px;
+            border-right: solid 1px #c00;
+            overflow: hidden;
+            .icon {
+                padding-right: 8px;
+                vertical-align: middle;
+            }
+            .icon,
+            span {
+                line-height: 25px;
+                display: inline-block;
+            }
+        }
+        a:last-child {
+            border-right: none;
+        }
+        .btn {
+            padding: 0 5px;
+            border-radius: 0;
+        }
+    }
+    .hh-state {
+        padding: 15px 5px;
+        display: block;
+        background:#f5f5f5;
+    }
+}

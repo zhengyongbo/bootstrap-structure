@@ -1,0 +1,23 @@
+tour_icons:
+  - icon: mdi-maps-directions-bus
+    text: 周边游
+    bg_class: brown lighten-2
+
+  - icon: mdi-maps-directions-transit
+    text: 国内游
+    bg_class: red darken-2
+
+  - icon: mdi-maps-flight
+    text: 出境游
+    bg_class: brown lighten-2
+
+  - icon: mdi-action-account-balance
+    text: 门店详情
+    bg_class: brown lighten-2
+
+notice_text: 重庆包机直飞岘港1999元起！8月逢周四出发，位子有限，先到先得！
+
+line_images:
+  url: line_recomm_01.png
+  text: 昆明<新西兰-南北岛8日游>宿梯卡坡，山顶自助餐，赠玛塔玛塔，萤火虫洞，7月观星
+  price: <span>￥100</span><small>起</small>

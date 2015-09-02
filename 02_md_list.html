@@ -1,0 +1,33 @@
+---
+title: 02_门店列表
+slug: 02_md_list
+foot_nav: true
+---
+<div class="panel panel-default border-none box-shadow-none">
+    <div class="panel-heading hh-padding-15">搜索到10家门店</div>
+    <div class="panel-body hh-pb-0">
+        <a class="label hh-padding-5 hh-font-size-14 grey ">区域：当前位置</a>
+        <ul class="media-list media-list-mine hh-mt-20">
+            {% for item in site.data.02_md_list %}
+            <li class="media">
+                <a href="javascript:void(0)">
+                    <div class="media-left">
+                        <img class="media-object img-circle" src="asserts/images/{{ item.img }}" alt="...">
+                    </div>
+                    <div class="media-body">
+                        <div class="heading-wrap clearfix hh-ptp-10">
+                            <h4 class="media-heading hh-font-weight red-text text-darken-4 pull-left">{{ item.head_text }}</h4>
+                            <span class="indigo-text text-darken-4 pull-right"><i class="mdi-action-room"></i>{{ item.address }}</span>
+                        </div>
+                        <div class="content-wrap clearfix">
+                            <p class="pull-left">{{ item.content }}</p>
+                            <span class="pull-right grey-text"><i class="mdi-hardware-keyboard-arrow-right mdi-2x line-height-1em "></i></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+

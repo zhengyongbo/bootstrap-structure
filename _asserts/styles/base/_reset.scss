@@ -7,8 +7,6 @@
     src: local('Inconsolata'), url(http://fonts.gstatic.com/s/inconsolata/v11/BjAYBlHtW3CJxDcjzrnZCCYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
     unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
-
-
 /* latin */
 
 @font-face {
@@ -25,6 +23,7 @@
     font-weight: 400;
     src: url(../fonts/MaterialIcons-Regular.eot);
     /* For IE6-8 */
+    
     src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/MaterialIcons-Regular.woff2) format('woff2'), url(../fonts/MaterialIcons-Regular.woff) format('woff'), url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
 
@@ -46,7 +45,7 @@ body {
     background-color: #fcfcfc;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     html,
     body {
         //overflow-x:hidden;
@@ -60,13 +59,19 @@ body {
 }
 
 body {
-    font-family:Microsoft YaHei,SimSun,Arial;
+    font-family: Microsoft YaHei, SimSun, Arial;
+}
+
+a{
+    color:#666;
 }
 
 a:focus,
 a:hover {
     text-decoration: none;
 }
+
+
 
 ul,
 ol,
@@ -145,6 +150,10 @@ h6 {
     margin-top: 10px;
 }
 
+.hh-mt-20 {
+    margin-top: 20px;
+}
+
 .hh-margin-10 {
     margin: 10px;
 }
@@ -165,6 +174,10 @@ h6 {
     padding-top: 15px;
 }
 
+.hh-padding-15{
+    padding:15px;
+}
+
 .hh-pt-20 {
     padding-top: 20px;
 }
@@ -177,14 +190,40 @@ h6 {
     padding-left: 10px;
 }
 
+.hh-pl-0 {
+    padding-left: 0;
+}
+
+.hh-pr-0 {
+    padding-right: 0;
+}
+.hh-pr-5 {
+    padding-right: 5px;
+}
+.border-radius-none{
+    border-radius: 0;
+}
+
 .hh-plr-0 {
     padding-left: 0;
     padding-right: 0;
 }
 
+.hh-pb-0 {
+    padding-bottom: 0;
+}
+
+.hh-pt-0 {
+    padding-top: 0;
+}
+
 .hh-plr-5 {
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.hh-pr-5 {
+    padding-left: 5px;
 }
 
 .hh-plr-10 {
@@ -201,20 +240,49 @@ h6 {
     padding: 10px;
 }
 
+.hh-padding-5 {
+    padding: 5px;
+}
+
 .hh-padding-0 {
     padding: 0;
 }
 
 .hh-font-weight {
-    font-weight: bold;
+    font-weight: bold !important;
+}
+
+.line-height-1em{
+    line-height: 1em;
 }
 
 @for $size from 10 through 24 {
-    .hh-font-size-#{$size} {
-        font-size: #{$size}px;
+    .hh-font-size-#{$size}
+    {
+        font-size: #{$size}px !important;
     }
 }
 
 .border-none {
     border: none;
+}
+
+.box-shadow-none {
+    box-shadow: none;
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
 }

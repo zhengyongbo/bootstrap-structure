@@ -7,10 +7,15 @@
 </head>
 <body>
     <div id="main">
-      <div class="wrapper">
+     	{% if page.top_nav %}
+			{% include {{ page.top_nav.file_name }}.html %}
+     	{% endif %}
+
         {{ content }}
-      </div>
     </div>
+	{% if page.foot_nav %}
+		{% include hh_02_home_nav_foot.html %}
+	{% endif %}
     {% include footer.html %}
 </body>
 
